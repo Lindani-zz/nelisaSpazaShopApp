@@ -1,0 +1,1 @@
+SELECT Products.Name as productName, Suppliers.Name as supplierName, Purchases.Id, Purchase_date, Purchase_price, Qty FROM Purchases, Products, Suppliers WHERE Purchases.Product_Id = Products.Id AND Purchases.Supplier_Id = Suppliers.Id ORDER BY Purchase_date DESC;
